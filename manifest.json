@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Browse with Guy",
+  "description": "Let Guy Fieri accompany you on your Internet browsing",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["guy.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "guy.png"
+  ]
+}
